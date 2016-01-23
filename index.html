@@ -10,7 +10,8 @@
     <h1>
       Virtual Piano
     </h1>
-
+    
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/backbone/node_modules/underscore/underscore-min.js"></script>
     <script src="node_modules/backbone/backbone-min.js"></script>
     <script src="views/AppView.js"></script>
@@ -21,7 +22,7 @@
         var appModel = new AppModel();
         var appView = new AppView({model: appModel});
 
-        $(body).append(appView.render());
+        $('body').append(appView.render());
       });
     </script>
   </body>
