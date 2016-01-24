@@ -2,6 +2,7 @@
 var LogView = Backbone.View.extend({
 
   initialize: function() {
+    this.model.on('change:logDisplay', this.render, this);
     this.render();
   },
 
