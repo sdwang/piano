@@ -5,9 +5,10 @@ var KeyView = Backbone.View.extend({
     this.model.on('click', this.pressKey, this);
   },
 
-  template: _.template('<div class=<% keyType %>><%= note %></div>'),
+  template: _.template('<div><%= note %></div>'),
 
   render: function() {
+    this.$el.addClass(this.model.get('keyType'));
     return this.$el.html(this.template(this.model.attributes));
   },
 
