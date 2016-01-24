@@ -14,11 +14,21 @@
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/backbone/node_modules/underscore/underscore-min.js"></script>
     <script src="node_modules/backbone/backbone-min.js"></script>
+    <script src="models/KeyModel.js"></script>
+    <script src="views/KeyView.js"></script>
+    <script src="collections/Keys.js"></script>
+    <script src="views/KeysView.js"></script>
     <script src="views/AppView.js"></script>
     <script src="models/AppModel.js"></script>
 
     <script>
       $(function() {
+        var keyList = [
+          new KeyModel('C', 'white')];
+
+        var keysCollection = new KeysCollection(keyList);
+        var keysView = new KeysView({collection: keysCollection});
+
         var appModel = new AppModel();
         var appView = new AppView({model: appModel});
 
