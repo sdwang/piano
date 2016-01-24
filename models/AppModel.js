@@ -9,10 +9,11 @@ var AppModel = Backbone.Model.extend({
 
     var keyList = [
         new KeyModel('C', 'white'),
+        new KeyModel('C#', 'black'),
         new KeyModel('D', 'white')];
 
     this.set('piano', new PianoCollection(keyList));
-    //TODO: set log
+    this.set('log', new LogModel());
     //TODO: set input field
   }
 

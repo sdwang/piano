@@ -19,7 +19,7 @@ var KeyView = Backbone.View.extend({
 
   pressKey: function() {
     //TODO: Handle highlighting of key view
-
+    
     this.model.triggerPress();
   }
 
