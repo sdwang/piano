@@ -9,7 +9,7 @@ var AppModel = Backbone.Model.extend({
 
     var keyList = [
         new KeyModel('C', 'white'),
-        new KeyModel('C#', 'black'),
+        new KeyModel('Csharp', 'black'),
         new KeyModel('D', 'white')];
 
     this.set('piano', new PianoCollection(keyList));
@@ -21,8 +21,22 @@ var AppModel = Backbone.Model.extend({
     }, this);
 
     this.get('input').on('change', function(input) {
-      console.log(input.get('inputtedNotes'));
+      this.playInputtedNotes(input.get('inputtedNotes'));
     }, this);
+  },
+
+  playInputtedNotes: function(input) {
+    var notesArray = input.split(',');
+
+    var clickKey = function(i, notes) {
+      $('.' + notes[i].trim()).click();
+      i++;
+      if(i < notes.length) {
+        setTimeout(clickKey.bind(this, i, notes), 1000);
+      }
+    };
+
+    clickKey(0, notesArray);
   }
 
 });

@@ -14,12 +14,13 @@ var KeyView = Backbone.View.extend({
 
   render: function() {
     this.$el.addClass(this.model.get('keyType'));
+    this.$el.addClass(this.model.get('note'));
     return this.$el.html(this.template(this.model.attributes));
   },
 
   pressKey: function() {
     //TODO: Handle highlighting of key view
-    
+
     this.model.triggerPress();
   }
 
