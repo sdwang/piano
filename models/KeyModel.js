@@ -8,6 +8,7 @@ var KeyModel = Backbone.Model.extend({
 
   triggerPress: function() {
     //TODO: highlight key (or put highlight key in key view)
+    console.log('Key ' + this.get('note') + 'was pressed');
 
     this.trigger('press', this);
   },

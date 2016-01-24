@@ -6,6 +6,14 @@ var AppModel = Backbone.Model.extend({
       //log to log
     //listen to input field submit
       //click keys
+
+    var keyList = [
+        new KeyModel('C', 'white'),
+        new KeyModel('D', 'white')];
+
+    this.set('piano', new PianoCollection(keyList));
+    //TODO: set log
+    //TODO: set input field
   }
-  
+
 });
