@@ -2,11 +2,11 @@
 var LogModel = Backbone.Model.extend({
 
   initialize: function() {
-    this.set('logDisplay', '');
+    this.set('logDisplay', 'Played notes: ');
   },
 
   addToLog: function(note) {
-    this.set('logDisplay', this.get('logDisplay') + note);
+    this.set('logDisplay', this.get('logDisplay') + note + ' ');
   }
 
 });

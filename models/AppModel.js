@@ -14,10 +14,14 @@ var AppModel = Backbone.Model.extend({
 
     this.set('piano', new PianoCollection(keyList));
     this.set('log', new LogModel());
-    //TODO: set input field
+    this.set('input', new InputModel());
 
     this.get('piano').on('press', function(key) {
       this.get('log').addToLog(key.get('note'));
+    }, this);
+
+    this.get('input').on('change', function(input) {
+      console.log(input.get('inputtedNotes'));
     }, this);
   }
 
