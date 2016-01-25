@@ -13,10 +13,10 @@ var InputView = Backbone.View.extend({
   },
 
   attributes: {
-    class: "input-form"
+    class: "input-form row"
   },
 
-  template: _.template('<input class="input-field" placeholder="Enter notes to play"></input><button class="submit">Play</button>'),
+  template: _.template('<input class="input-field col s6" placeholder="Enter notes to play"></input><button class="submit waves-effect waves-light btn">Play</button>'),
 
   render: function() {
     this.$el.html(this.template(this.model.attributes));

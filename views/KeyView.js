@@ -17,7 +17,7 @@ var KeyView = Backbone.View.extend({
     };
   },
 
-  template: _.template('<div><% if(keyType === \'white-key\') { %> <%= note %> <% } %></div>'),
+  template: _.template('<div class="note-name"><% if(keyType === \'white-key\') { %> <%= note %> <% } %></div>'),
 
   render: function() {
     return this.$el.html(this.template(this.model.attributes));

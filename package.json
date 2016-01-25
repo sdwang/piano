@@ -5,7 +5,8 @@
   "license": "",
   "dependencies": {
     "backbone": "^1.2.3",
-    "jquery": "^2.2.0"
+    "jquery": "^2.2.0",
+    "materialize-css": "^0.97.5"
   },
   "devDependencies": {},
   "scripts": {}
