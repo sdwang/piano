@@ -56,13 +56,15 @@ Piano Styles
 **************/
 
 .piano {
+  left: 30%;
+  top: 50px;
   position: relative;
 }
 
 .white-key {
   top: 50px;
-  width: 30px;
-  height: 200px;
+  width: 60px;
+  height: 320px;
   border-style: solid;
   border-color: black;
   border-width: thin;
@@ -71,8 +73,8 @@ Piano Styles
 
 .black-key {
   top: 50px;
-  width: 20px;
-  height: 125px;
+  width: 40px;
+  height: 200px;
   border-style: solid;
   border-color: black;
   border-width: thin;
@@ -81,16 +83,52 @@ Piano Styles
   z-index: 10;
 }
 
-.white-key[data-order='0'] {
-  left: 25px;
+.white-key[data-order='1'] {
+  left: 60px;
 }
 
-.white-key[data-order='1'] {
-  left: 55px;
+.white-key[data-order='2'] {
+  left: 120px;
+}
+
+.white-key[data-order='3'] {
+  left: 180px;
+}
+
+.white-key[data-order='4'] {
+  left: 240px;
+}
+
+.white-key[data-order='5'] {
+  left: 300px;
+}
+
+.white-key[data-order='6'] {
+  left: 360px;
 }
 
 .black-key[data-order='0'] {
-  left: 45px;
+  left: 40px;
+}
+
+.black-key[data-order='1'] {
+  left: 100px;
+}
+
+.black-key[data-order='2'] {
+  left: 160px;
+}
+
+.black-key[data-order='3'] {
+  left: 220px;
+}
+
+.black-key[data-order='4'] {
+  left: 280px;
+}
+
+.black-key[data-order='5'] {
+  left: 340px;
 }
 
 /**************
