@@ -61,27 +61,50 @@ Piano Styles
 
 .white-key {
   top: 50px;
-  left: 25px;
   width: 30px;
   height: 200px;
-  display: inline-block;
   border-style: solid;
   border-color: black;
   border-width: thin;
-  float: left;
   position: absolute;
 }
 
 .black-key {
   top: 50px;
-  left: 45px;
   width: 20px;
   height: 125px;
   border-style: solid;
   border-color: black;
   border-width: thin;
   background-color: black;
-  float: left;
   position: absolute;
   z-index: 10;
+}
+
+.white-key[data-order='0'] {
+  left: 25px;
+}
+
+.white-key[data-order='1'] {
+  left: 55px;
+}
+
+.black-key[data-order='0'] {
+  left: 45px;
+}
+
+/**************
+Played Keys Log Styles
+**************/
+
+.log-display {
+  position: relative;
+}
+
+/**************
+Input Field Styles
+**************/
+
+.input-form {
+  position: relative;
 }

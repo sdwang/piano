@@ -6,6 +6,10 @@ var LogView = Backbone.View.extend({
     this.render();
   },
 
+  attributes: {
+    class: "log-display"
+  },
+
   template: _.template('<div><%= logDisplay %></div>'),
 
   render: function() {

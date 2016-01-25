@@ -12,6 +12,10 @@ var InputView = Backbone.View.extend({
     }
   },
 
+  attributes: {
+    class: "input-form"
+  },
+
   template: _.template('<input class="input-field" placeholder="Enter notes to play"></input><button class="submit">Play</button>'),
 
   render: function() {
