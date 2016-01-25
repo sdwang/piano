@@ -39,9 +39,14 @@ var AppModel = Backbone.Model.extend({
     var notesArray = input.split(',');
 
     var clickKey = function(i, notes) {
-      $('.' + notes[i].trim()).click();
-      i++;
+      if(i > 0) {
+        $('.' + notes[i - 1].trim()).mouseup();
+      }
       if(i < notes.length) {
+        $('.' + notes[i].trim()).mousedown();
+      }
+      i++;
+      if(i <= notes.length) {
         setTimeout(clickKey.bind(this, i, notes), 1000);
       }
     };

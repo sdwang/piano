@@ -86,6 +86,10 @@ Piano Styles
   border-color: gray;
 }
 
+.white-key:hover {
+  cursor: pointer;
+}
+
 .black-key {
   top: 50px;
   width: 40px;
@@ -97,6 +101,10 @@ Piano Styles
   position: absolute;
   z-index: 10;
   border-radius: 3px;
+}
+
+.black-key:hover {
+  cursor: pointer;
 }
 
 .white-key[data-order='1'] {
