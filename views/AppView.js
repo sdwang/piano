@@ -3,15 +3,15 @@ var AppView = Backbone.View.extend({
   
   initialize: function() {
     this.pianoView = new PianoView({collection: this.model.get('piano')});
-    this.logView = new LogView({model: this.model.get('log')});
     this.inputView = new InputView({model: this.model.get('input')});
+    this.logView = new LogView({model: this.model.get('log')});
   },
 
   render: function() {
     return this.$el.html([
       this.pianoView.$el,
-      this.logView.$el,
-      this.inputView.$el
+      this.inputView.$el,
+      this.logView.$el
       ]);
   }
 

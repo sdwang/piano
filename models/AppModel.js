@@ -23,8 +23,8 @@ var AppModel = Backbone.Model.extend({
         ];
 
     this.set('piano', new PianoCollection(keyList));
-    this.set('log', new LogModel());
     this.set('input', new InputModel());
+    this.set('log', new LogModel());
 
     this.get('piano').on('press', function(key) {
       this.get('log').addToLog(key.get('note'));

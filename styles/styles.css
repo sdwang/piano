@@ -132,8 +132,10 @@ Piano Styles
 
 .note-name {
   position: absolute;
-  top: 290px;
-  left: 30px;
+  top: 250px;
+  left: 20px;
+  font-size: xx-large;
+  font-weight: 600;
 }
 
 /**************
@@ -142,10 +144,11 @@ Played Keys Log Styles
 
 .log-display {
   position: relative;
-  top: 425px;
+  top: 440px;
   left: 50px;
   font-size: medium;
   font-weight: 400;
+  margin-right: 100px;
 }
 
 .log-name {
@@ -158,6 +161,6 @@ Input Field Styles
 
 .input-form {
   position: relative;
-  top: 440px;
+  top: 400px;
   left: 50px;
 }
