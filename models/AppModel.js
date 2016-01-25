@@ -8,9 +8,9 @@ var AppModel = Backbone.Model.extend({
       //click keys
 
     var keyList = [
-        new KeyModel('C', 'white'),
-        new KeyModel('Csharp', 'black'),
-        new KeyModel('D', 'white')];
+        new KeyModel('C', 'white-key'),
+        new KeyModel('Csharp', 'black-key'),
+        new KeyModel('D', 'white-key')];
 
     this.set('piano', new PianoCollection(keyList));
     this.set('log', new LogModel());
