@@ -8,7 +8,6 @@ var KeyModel = Backbone.Model.extend({
   },
 
   triggerPress: function() {
-    //TODO: highlight key (or put highlight key in key view)
     this.trigger('press', this);
   },
 

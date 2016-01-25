@@ -5,8 +5,11 @@ var KeyView = Backbone.View.extend({
   },
 
   events: {
-    'click': function() {
+    'mousedown': function() {
       this.pressKey();
+    },
+    'mouseup': function() {
+      this.releaseKey();
     }
   },
 
@@ -24,9 +27,12 @@ var KeyView = Backbone.View.extend({
   },
 
   pressKey: function() {
-    //TODO: Handle highlighting of key view
-
+    this.$el.addClass('pressed-key');
     this.model.triggerPress();
+  },
+
+  releaseKey: function() {
+    this.$el.removeClass('pressed-key');
   }
 
 });

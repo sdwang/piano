@@ -77,6 +77,13 @@ Piano Styles
   border-color: black;
   border-width: thin;
   position: absolute;
+  border-radius: 5px;
+}
+
+.white-key.pressed-key {
+  height: 315px;
+  border-width: 1px 5px 2px;
+  border-color: gray;
 }
 
 .black-key {
@@ -89,6 +96,7 @@ Piano Styles
   background-color: black;
   position: absolute;
   z-index: 10;
+  border-radius: 3px;
 }
 
 .white-key[data-order='1'] {
