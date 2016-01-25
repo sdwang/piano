@@ -52,6 +52,15 @@ table {
 }
 
 /**************
+Header Styles
+**************/
+
+h1 {
+  position: relative;
+  left: 5%;
+}
+
+/**************
 Piano Styles
 **************/
 
@@ -145,10 +154,10 @@ Played Keys Log Styles
 .log-display {
   position: relative;
   top: 440px;
-  left: 50px;
+  left: 20%;
   font-size: medium;
   font-weight: 400;
-  margin-right: 100px;
+  margin-right: 35%;
 }
 
 .log-name {
@@ -162,5 +171,5 @@ Input Field Styles
 .input-form {
   position: relative;
   top: 400px;
-  left: 50px;
+  left: 20%;
 }
