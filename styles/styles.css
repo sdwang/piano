@@ -81,9 +81,10 @@ Piano Styles
 }
 
 .white-key.pressed-key {
-  height: 315px;
-  border-width: 1px 5px 2px;
-  border-color: gray;
+  height: 317px;
+  /*border-width: 1px 5px 2px;*/
+  /*border-color: gray;*/
+  box-shadow: 5px 1px 3px rgba(0,0,0,0.1) inset, -5px 5px 20px rgba(0,0,0,0.2) inset,0 0 3px rgba(0,0,0,0.2);
 }
 
 .white-key:hover {
