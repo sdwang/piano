@@ -56,5 +56,21 @@ Piano Styles
 **************/
 
 .white-key {
-  border: black;
+  width: 30px;
+  height: 200px;
+  display: inline-block;
+  border-style: solid;
+  border-color: black;
+  border-width: thin;
+  float: left;
+}
+
+.black-key {
+  width: 20px;
+  height: 125px;
+  border-style: solid;
+  border-color: black;
+  border-width: thin;
+  background-color: black;
+  float: left;
 }
