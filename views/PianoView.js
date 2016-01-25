@@ -6,6 +6,7 @@ var PianoView = Backbone.View.extend({
   },
 
   render: function() {
+    this.$el.addClass('piano')
     this.$el.append(this.collection.map(function(key) {
       return new KeyView({model: key}).render();
     }));

@@ -10,11 +10,16 @@ var KeyView = Backbone.View.extend({
     }
   },
 
+  attributes: function() {
+    return {
+      'data-order': this.model.get('keyOrder'),
+      class: this.model.get('keyType') + ' ' + this.model.get('note')
+    };
+  },
+
   template: _.template('<div><%= note %></div>'),
 
   render: function() {
-    this.$el.addClass(this.model.get('keyType'));
-    this.$el.addClass(this.model.get('note'));
     return this.$el.html(this.template(this.model.attributes));
   },
 
