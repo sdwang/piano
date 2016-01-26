@@ -27,11 +27,13 @@ var KeyView = Backbone.View.extend({
   },
 
   pressKey: function() {
+    $('.audio-player').attr('src', this.model.get('url'));
     this.$el.addClass('pressed-key');
     this.model.triggerPress();
   },
 
   releaseKey: function() {
+    $('.audio-player').attr('src', '');
     this.$el.removeClass('pressed-key');
   }
 

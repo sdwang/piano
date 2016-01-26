@@ -58,6 +58,7 @@ Header Styles
 h1 {
   position: relative;
   left: 5%;
+  font-family: 'Tangerine', 'Great Vibes', cursive;
 }
 
 /**************
@@ -82,8 +83,6 @@ Piano Styles
 
 .white-key.pressed-key {
   height: 317px;
-  /*border-width: 1px 5px 2px;*/
-  /*border-color: gray;*/
   box-shadow: 5px 1px 3px rgba(0,0,0,0.1) inset, -5px 5px 20px rgba(0,0,0,0.2) inset, 0 0 3px rgba(0,0,0,0.2);
 }
 
@@ -99,6 +98,7 @@ Piano Styles
   border-color: black;
   border-width: thin;
   background: linear-gradient(45deg, #323232 0%,#4c4c4c 100%);
+  background: -moz-linear-gradient(45deg, #323232 0%,#4c4c4c 100%);
   position: absolute;
   z-index: 10;
   border-radius: 3px;
@@ -108,6 +108,7 @@ Piano Styles
 .black-key.pressed-key{
   box-shadow: -1px -1px 2px rgba(255,255,255,0.2) inset, 0 -2px 2px 3px rgba(0,0,0,0.6) inset, 0 1px 2px rgba(0,0,0,0.5);
   background: linear-gradient(left, #4c4c4c 0%,#323232 100%);
+  background: -moz-linear-gradient(left, #4c4c4c 0%,#323232 100%);
 }
 
 .black-key:hover {
