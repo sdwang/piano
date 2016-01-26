@@ -5,6 +5,10 @@ var SampleCollectionView = Backbone.View.extend({
     this.render();
   },
 
+  attributes: {
+    class: "sample-buttons row"
+  },
+
   render: function() {
     //this.$el.addClass('sample')
     this.$el.append(this.collection.map(function(sampleButton) {

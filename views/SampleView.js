@@ -13,14 +13,16 @@ var SampleView = Backbone.View.extend({
 
   attributes: function() {
     return {
-      "data-sample": this.model.get('musicSheet')
+      "data-sample": this.model.get('musicSheet'),
+      "class": "col s3"
     };
   },
 
   template: _.template('<button class="waves-effect waves-light btn"><%= songName %></button>'),
 
   render: function() {
-    this.$el.html(this.template(this.model.attributes));
+    return this.$el.html(this.template(this.model.attributes));
+    console.log(this.$el);
   }
 
 });

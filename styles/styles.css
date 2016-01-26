@@ -189,6 +189,15 @@ Played Keys Log Styles
 }
 
 /**************
+Sample Styles
+**************/
+
+.sample-buttons {
+  position: relative;
+  top: 450px;
+}
+
+/**************
 Input Field Styles
 **************/
 
