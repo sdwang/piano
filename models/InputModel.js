@@ -3,6 +3,10 @@ var InputModel = Backbone.Model.extend({
 
   initialize: function() {
     this.set('inputtedNotes', '');
+  },
+
+  submit: function() {
+    this.trigger('submit', this);
   }
 
 });

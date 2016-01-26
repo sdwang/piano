@@ -16,7 +16,7 @@ var AppModel = Backbone.Model.extend({
       this.get('log').addToLog(key.get('note'));
     }, this);
 
-    this.get('input').on('change', function(input) {
+    this.get('input').on('submit', function(input) {
       this.playInputtedNotes(input.get('inputtedNotes'));
     }, this);
   },

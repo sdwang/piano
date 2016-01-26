@@ -9,6 +9,7 @@ var InputView = Backbone.View.extend({
     'click .submit': function() {
       this.model.set('inputtedNotes', $('.input-field').val());
       $('.input-field').val('');
+      this.model.submit();
     }
   },
 
