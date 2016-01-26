@@ -1,4 +1,5 @@
-//Defines a backbone model class for the entire piano app
+//Defines a backbone model class for the entire piano app.
+//This model handles all the logic that connects the different components
 var AppModel = Backbone.Model.extend({
   
   initialize: function(params) {

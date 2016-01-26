@@ -10,7 +10,6 @@ var SampleCollectionView = Backbone.View.extend({
   },
 
   render: function() {
-    //this.$el.addClass('sample')
     this.$el.append(this.collection.map(function(sampleButton) {
       return new SampleView({model: sampleButton}).render();
     }));
