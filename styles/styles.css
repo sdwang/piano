@@ -66,6 +66,7 @@ Piano Styles
 **************/
 
 .piano {
+  top: -50px;
   left: 30%;
   position: relative;
 }
@@ -172,29 +173,12 @@ Piano Styles
 }
 
 /**************
-Played Keys Log Styles
-**************/
-
-.log-display {
-  position: relative;
-  top: 440px;
-  left: 20%;
-  font-size: medium;
-  font-weight: 400;
-  margin-right: 35%;
-}
-
-.log-name {
-  font-weight: 600;
-}
-
-/**************
 Sample Styles
 **************/
 
 .sample-buttons {
   position: relative;
-  top: 445px;
+  top: 380px;
   left: 20%;
 }
 
@@ -209,6 +193,23 @@ Input Field Styles
 
 .input-form {
   position: relative;
+  top: 390px;
+  left: 20%;
+}
+
+/**************
+Played Keys Log Styles
+**************/
+
+.log-display {
+  position: relative;
   top: 400px;
   left: 20%;
+  font-size: medium;
+  font-weight: 400;
+  margin-right: 35%;
+}
+
+.log-name {
+  font-weight: 600;
 }
