@@ -13,7 +13,6 @@ var SampleView = Backbone.View.extend({
 
   attributes: function() {
     return {
-      "data-sample": this.model.get('musicSheet'),
       "class": "sample"
     };
   },

@@ -22,6 +22,10 @@ var AppModel = Backbone.Model.extend({
       this.get('log').addToLog(key.get('note'));
     }, this);
 
+    this.get('samples').on('sample', function(button) {
+      $('.input-field').val(button.get('musicSheet'));
+    });
+
     this.get('input').on('submit', function(input) {
       this.playInputtedNotes(input.get('inputtedNotes'));
     }, this);
