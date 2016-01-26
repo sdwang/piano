@@ -6,7 +6,6 @@ var AppView = Backbone.View.extend({
     this.inputView = new InputView({model: this.model.get('input')});
     this.sampleCollectionView = new SampleCollectionView({collection: this.model.get('samples')});
     this.logView = new LogView({model: this.model.get('log')});
-    console.log(this.sampleCollectionView.$el);
   },
 
   render: function() {

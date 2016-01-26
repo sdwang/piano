@@ -14,7 +14,7 @@ var SampleView = Backbone.View.extend({
   attributes: function() {
     return {
       "data-sample": this.model.get('musicSheet'),
-      "class": "col s3"
+      "class": "sample"
     };
   },
 
@@ -22,7 +22,6 @@ var SampleView = Backbone.View.extend({
 
   render: function() {
     return this.$el.html(this.template(this.model.attributes));
-    console.log(this.$el);
   }
 
 });

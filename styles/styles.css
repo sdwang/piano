@@ -194,7 +194,13 @@ Sample Styles
 
 .sample-buttons {
   position: relative;
-  top: 450px;
+  top: 445px;
+  left: 20%;
+}
+
+.sample {
+  display: inline-block;
+  margin-left: 40px;
 }
 
 /**************
