@@ -1,28 +1,14 @@
 //Defines a backbone model class for the entire piano app
 var AppModel = Backbone.Model.extend({
   
-  initialize: function() {
-    //Listen to key clicks and on click
-      //log to log
-    //listen to input field submit
-      //click keys
+  initialize: function(params) {
+    var keys = [];
 
-    var keyList = [
-        new KeyModel('C', 'white-key', 0),
-        new KeyModel('Csharp', 'black-key', 0),
-        new KeyModel('D', 'white-key', 1),
-        new KeyModel('Dsharp', 'black-key', 1),
-        new KeyModel('E', 'white-key', 2),
-        new KeyModel('F', 'white-key', 3),
-        new KeyModel('Fsharp', 'black-key', 3),
-        new KeyModel('G', 'white-key', 4),
-        new KeyModel('Gsharp', 'black-key', 4),
-        new KeyModel('A', 'white-key', 5),
-        new KeyModel('Asharp', 'black-key', 5),
-        new KeyModel('B', 'white-key', 6),        
-        ];
+    for(var i = 0; i < params.keyList.length; i++) {
+      keys.push(new KeyModel(params.keyList[i].note, params.keyList[i].keyType, params.keyList[i].keyOrder, params.keyList[i].url));
+    }
 
-    this.set('piano', new PianoCollection(keyList));
+    this.set('piano', new PianoCollection(keys));
     this.set('input', new InputModel());
     this.set('log', new LogModel());
 

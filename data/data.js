@@ -1,5 +1,5 @@
 // Defines an array of data regarding keys and their properties
-var keys = [
+var keyList = [
   {
     note: "C",
     keyType: "white-key",

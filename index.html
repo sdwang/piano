@@ -21,20 +21,27 @@
     <script src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
     <script src="node_modules/backbone/node_modules/underscore/underscore-min.js"></script>
     <script src="node_modules/backbone/backbone-min.js"></script>
+
+    <script src="data/data.js"></script>
+
     <script src="models/KeyModel.js"></script>
     <script src="views/KeyView.js"></script>
+
     <script src="models/LogModel.js"></script>
     <script src="views/LogView.js"></script>
+
     <script src="models/InputModel.js"></script>
-    <script src="views/InputView.js"></script>    
+    <script src="views/InputView.js"></script>
+
     <script src="collections/PianoCollection.js"></script>
     <script src="views/PianoView.js"></script>
+
     <script src="views/AppView.js"></script>
     <script src="models/AppModel.js"></script>
 
     <script>
       $(function() {
-        var appModel = new AppModel();
+        var appModel = new AppModel({keyList: keyList});
         var appView = new AppView({model: appModel});
 
         $('body').append(appView.render());
