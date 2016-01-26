@@ -3,13 +3,19 @@ var AppModel = Backbone.Model.extend({
   
   initialize: function(params) {
     var keys = [];
+    var sampleButtons = [];
 
     for(var i = 0; i < params.keyList.length; i++) {
       keys.push(new KeyModel(params.keyList[i].note, params.keyList[i].keyType, params.keyList[i].keyOrder, params.keyList[i].url));
     }
 
+    for(var i = 0; i < sampleList.length; i++) {
+      sampleButtons.push(new SampleModel(params.sampleList[i].songName, params.sampleList[i].musicSheet));
+    }
+
     this.set('piano', new PianoCollection(keys));
     this.set('input', new InputModel());
+    this.set('samples', new SampleCollection(sampleButtons));
     this.set('log', new LogModel());
 
     this.get('piano').on('press', function(key) {

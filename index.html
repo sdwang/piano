@@ -35,6 +35,12 @@
     <script src="models/LogModel.js"></script>
     <script src="views/LogView.js"></script>
 
+    <script src="models/SampleModel.js"></script>
+    <script src="views/SampleView.js"></script>
+
+    <script src="collections/SampleCollection.js"></script>
+    <script src="views/SampleView.js"></script>
+
     <script src="models/InputModel.js"></script>
     <script src="views/InputView.js"></script>
 
@@ -46,7 +52,7 @@
 
     <script>
       $(function() {
-        var appModel = new AppModel({keyList: keyList});
+        var appModel = new AppModel({keyList: keyList, sampleList: sampleList});
         var appView = new AppView({model: appModel});
 
         $('body').append(appView.render());

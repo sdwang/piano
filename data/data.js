@@ -72,3 +72,18 @@ var keyList = [
     keyOrder: 6,
     url: "http://jetcityorange.com/musical-notes/B4-493.88.mp3"
   }];
+
+var sampleList = [
+  {
+    songName: "Mary Had a Little Lamb",
+    musicSheet: "E,D,C,D,E,E,E,D,D,D,E,G,G,E,D,C,D,E,E,E,D,D,E,D,C"
+  },
+  {
+    songName: "Yankee Doodle",
+    musicSheet: "G, G, G, D, E, E, D"
+  },
+  {
+    songName: "Do Re Mi",
+    musicSheet: "C, D, E, C, E, C, E"
+  }
+];
